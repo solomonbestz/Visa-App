@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'styles/base.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/base/index.css' %}">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="{% static 'images/logo.png' %}" alt="" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Apply</a></li>
+                <li><a href="#">Interview</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Track Process</a></li>
+            </ul>
+        </div>
+    </div>
+    {% block content %}{% endblock content %}
+</body>
+</html>
