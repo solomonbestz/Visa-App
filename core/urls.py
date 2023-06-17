@@ -23,5 +23,6 @@ urlpatterns = [
     path('application/', include('application.urls')),
     path('interview/', include('interview.urls')),
     path('about/', include('about.urls')),
-    path('contact/', include('contact.urls'))
+    path('contact/', include('contact.urls')),
+    path('track/', include('track_progress.urls'))
 ]
