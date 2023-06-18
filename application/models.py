@@ -13,3 +13,9 @@ class Application(models.Model):
     email = models.EmailField(_('Email Address'), unique=True)
     date_of_entry = models.DateField(null=True)
     visa_type = models.CharField(max_length=20, null=True)
+
+    def __str__(self) -> str:
+        return self.passport_number
+    
+
+
