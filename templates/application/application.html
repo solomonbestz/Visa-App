@@ -9,17 +9,17 @@
 <div class="content">
     <div class="regform"><h1>Application Form </h1></div>
     <div class="main">
-        <form action="">
+        <form action="" method="post">
             {% csrf_token %}
             <input type="text" name="pass_num" placeholder="Passport Number">
-            <input type="date" name="pass_num" placeholder="Passport Number">
-            <input type="text" name="pass_num" placeholder="Passport Number">
-            <input type="text" name="pass_num" placeholder="Passport Number">
-            <input type="text" name="pass_num" placeholder="Passport Number">
-            <input type="text" name="pass_num" placeholder="Passport Number">
-            <input type="text" name="pass_num" placeholder="Passport Number">
-            <input type="text" name="pass_num" placeholder="Passport Number">
-            <input type="text" name="pass_num" placeholder="Passport Number">
+            <input type="file" name="pass_photo" placeholder="Passport Photo">
+            <input type="text" name="app_country" placeholder="Application Country">
+            <input type="text" name="embassy" placeholder="Embassy">
+            <input type="date" name="date_birth" placeholder="Date Of Birth">
+            <input type="text" name="email" placeholder="Email">
+            <input type="date" name="date_entry" placeholder="Date Of Email">
+            <input type="text" name="visa_type" placeholder="Visa Type">
+            <button type="submit">Submit</button>
         </form>
     </div>
 </div>
